@@ -1,0 +1,15 @@
+﻿  pch.cpp
+  UnitTest7.cpp
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_1(templates)\Lab_06_03_1(templates).cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file '/UnitTest7.cpp')
+      C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_1(templates)\Lab_06_03_1(templates).cpp(40,15):
+      the template instantiation context (the oldest one first) is
+          C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_1(templates)\Lab_06_03_1(templates).cpp(20,5):
+          see reference to function template instantiation 'void GenerateArray<int>(T [],const int,T,T)' being compiled
+          with
+          [
+              T=int
+          ]
+  
+     Creating library C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest7.lib and object C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest7.exp
+  UnitTest7.vcxproj -> C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest7.dll
