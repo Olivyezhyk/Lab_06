@@ -40,7 +40,7 @@ namespace UnitTest4
 
         TEST_METHOD(TestCalculateAverageIndex)
         {
-            double averageIndex = CalculateAverageIndex(3, 0);
+            double averageIndex = CalculateAverageIndexRecursive(3, 0);
             Assert::AreEqual(1.5, averageIndex, 0.001);
         }
     };

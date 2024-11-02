@@ -1,5 +1,7 @@
-﻿  UnitTest10.cpp
+﻿  pch.cpp
+  UnitTest10.cpp
 C:\Users\olegs\Desktop\github\Lab_06\Lab_06_04_2\Lab_06_04_2.cpp(47,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   (compiling source file '/UnitTest10.cpp')
   
+     Creating library C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest10.lib and object C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest10.exp
   UnitTest10.vcxproj -> C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest10.dll
