@@ -1,15 +1,13 @@
-﻿  pch.cpp
-  UnitTest8.cpp
-C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  UnitTest8.cpp
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(45,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   (compiling source file '/UnitTest8.cpp')
-      C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(40,15):
+      C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(45,19):
       the template instantiation context (the oldest one first) is
           C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(20,5):
-          see reference to function template instantiation 'void GenerateArray<int>(T [],const int,T,T)' being compiled
+          see reference to function template instantiation 'void GenerateArray<int>(T [],const int,T,T,int)' being compiled
           with
           [
               T=int
           ]
   
-     Creating library C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest8.lib and object C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest8.exp
   UnitTest8.vcxproj -> C:\Users\olegs\Desktop\github\Lab_06\x64\Debug\UnitTest8.dll

@@ -1,10 +1,10 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Lab_06_03_2(templates).vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Lab_06_03_2(templates).cpp
-C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-      C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(40,15):
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(45,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+      C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(45,19):
       the template instantiation context (the oldest one first) is
           C:\Users\olegs\Desktop\github\Lab_06\Lab_06_03_2(templates)\Lab_06_03_2(templates).cpp(20,5):
-          see reference to function template instantiation 'void GenerateArray<int>(T [],const int,T,T)' being compiled
+          see reference to function template instantiation 'void GenerateArray<int>(T [],const int,T,T,int)' being compiled
           with
           [
               T=int

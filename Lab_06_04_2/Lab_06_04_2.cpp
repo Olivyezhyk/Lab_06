@@ -6,14 +6,13 @@
 
 using namespace std;
 
-void GenerateArray(double array[], int n) {
-    for (int i = 0; i < n; i++) {
-        array[i] = (rand() % 6100 - 4000) / 100.0;
-    }
+void GenerateArray(double array[], int n, int index = 0) {
+    if (index == n) return;
+    array[index] = (rand() % 6100 - 4000) / 100.0;
+    GenerateArray(array, n, index + 1);
 }
 
 double findMaxAbsoluteElementRecursive(const double array[], int n, int index = 0, double currentMax = 0) {
-    if (index == 0) currentMax = array[0];
     if (index == n) return currentMax;
     if (abs(array[index]) > abs(currentMax)) currentMax = array[index];
     return findMaxAbsoluteElementRecursive(array, n, index + 1, currentMax);
@@ -33,8 +32,8 @@ double sumBetweenFirstTwoPositivesRecursive(const double array[], int n, int ind
 
 void moveZerosToEndRecursive(double array[], int n, int index = 0, int nonZeroIndex = 0) {
     if (index == n) {
-        for (int i = nonZeroIndex; i < n; i++) {
-            array[i] = 0;
+        while (nonZeroIndex < n) {
+            array[nonZeroIndex++] = 0;
         }
         return;
     }
@@ -74,5 +73,6 @@ int main() {
     }
     cout << endl;
 
+    delete[] array;
     return 0;
 }

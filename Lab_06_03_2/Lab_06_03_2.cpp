@@ -4,8 +4,8 @@
 
 using namespace std;
 
-void GenerateArray(int array[], const int size);
-void PrintArray(const int array[], const int size);
+void GenerateArray(int array[], const int size, int index = 0);
+void PrintArray(const int array[], const int size, int index = 0);
 int FindSmallestOddRecursive(const int array[], int size, int index, int smallestOdd);
 
 int main() {
@@ -30,22 +30,30 @@ int main() {
     return 0;
 }
 
-void GenerateArray(int array[], const int size) {
+void GenerateArray(int array[], const int size, int index) {
     int Low = -40;
     int High = 20;
 
-    srand(time(0));
-
-    for (int i = 0; i < size; i++) {
-        array[i] = Low + rand() % (High - Low + 1);
+    if (index >= size) {
+        return;
     }
+
+    if (index == 0) {
+        srand(time(0));
+    }
+
+    array[index] = Low + rand() % (High - Low + 1);
+    GenerateArray(array, size, index + 1);
 }
 
-void PrintArray(const int array[], const int size) {
-    for (int i = 0; i < size; ++i) {
-        cout << setw(3) << array[i] << " ";
+void PrintArray(const int array[], const int size, int index) {
+    if (index >= size) {
+        cout << endl;
+        return;
     }
-    cout << endl;
+
+    cout << setw(3) << array[index] << " ";
+    PrintArray(array, size, index + 1);
 }
 
 int FindSmallestOddRecursive(const int array[], int size, int index, int smallestOdd) {

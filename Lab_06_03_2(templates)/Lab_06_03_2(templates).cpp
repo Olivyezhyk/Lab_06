@@ -5,10 +5,10 @@
 using namespace std;
 
 template <typename T>
-void GenerateArray(T array[], const int size, T Low, T High);
+void GenerateArray(T array[], const int size, T Low, T High, int index = 0);
 
 template <typename T>
-void PrintArray(const T array[], const int size);
+void PrintArray(const T array[], const int size, int index = 0);
 
 template <typename T>
 T FindSmallestOddRecursive(const T array[], int size, int index, T smallestOdd);
@@ -36,19 +36,28 @@ int main() {
 }
 
 template <typename T>
-void GenerateArray(T array[], const int size, T Low, T High) {
-    srand(time(0));
-    for (int i = 0; i < size; i++) {
-        array[i] = Low + rand() % (High - Low + 1);
+void GenerateArray(T array[], const int size, T Low, T High, int index) {
+    if (index >= size) {
+        return;
     }
+
+    if (index == 0) {
+        srand(time(0));
+    }
+
+    array[index] = Low + rand() % (High - Low + 1);
+    GenerateArray(array, size, Low, High, index + 1);
 }
 
 template <typename T>
-void PrintArray(const T array[], const int size) {
-    for (int i = 0; i < size; ++i) {
-        cout << setw(3) << array[i] << " ";
+void PrintArray(const T array[], const int size, int index) {
+    if (index >= size) {
+        cout << endl;
+        return;
     }
-    cout << endl;
+
+    cout << setw(3) << array[index] << " ";
+    PrintArray(array, size, index + 1);
 }
 
 template <typename T>
