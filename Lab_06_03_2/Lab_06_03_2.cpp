@@ -14,27 +14,31 @@ int main() {
 
     GenerateArray(array, size);
 
-    cout << "Array: ";
+    cout << "Array: [";
     PrintArray(array, size);
-    cout << endl;
+    cout << "]" << endl;
 
     int smallestOddRecursive = FindSmallestOddRecursive(array, size, 0, -1);
 
-    if (smallestOddRecursive != -1) {
+    if (smallestOddRecursive != -1) 
+    {
         cout << "Smallest odd element (recursive) = " << smallestOddRecursive << endl;
     }
-    else {
+    else 
+    {
         cout << "Smallest odd element (recursive) = not found" << endl;
     }
 
     return 0;
 }
 
-void GenerateArray(int array[], const int size, int index) {
+void GenerateArray(int array[], const int size, int index) 
+{
     int Low = -40;
     int High = 20;
 
-    if (index >= size) {
+    if (index >= size) 
+    {
         return;
     }
 
@@ -46,9 +50,9 @@ void GenerateArray(int array[], const int size, int index) {
     GenerateArray(array, size, index + 1);
 }
 
-void PrintArray(const int array[], const int size, int index) {
+void PrintArray(const int array[], const int size, int index) 
+{
     if (index >= size) {
-        cout << endl;
         return;
     }
 
@@ -56,13 +60,17 @@ void PrintArray(const int array[], const int size, int index) {
     PrintArray(array, size, index + 1);
 }
 
-int FindSmallestOddRecursive(const int array[], int size, int index, int smallestOdd) {
-    if (index >= size) {
+int FindSmallestOddRecursive(const int array[], int size, int index, int smallestOdd) 
+{
+    if (index >= size) 
+    {
         return smallestOdd;
     }
 
-    if (array[index] % 2 != 0) {
-        if (smallestOdd == -1 || array[index] < smallestOdd) {
+    if (array[index] % 2 != 0) 
+    {
+        if (smallestOdd == -1 || array[index] < smallestOdd) 
+        {
             smallestOdd = array[index];
         }
     }

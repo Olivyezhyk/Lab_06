@@ -16,9 +16,9 @@ int main() {
 
     GenerateArray(array, size);
 
-    cout << "Array: ";
+    cout << "Array: [";
     PrintArray(array, size);
-    cout << endl;
+    cout << "]" << endl;
 
     int maxIndex = FindMaxIndexRecursive(array, size);
     int minIndex = FindMinIndexRecursive(array, size);
@@ -29,15 +29,18 @@ int main() {
     return 0;
 }
 
-void GenerateArray(int array[], const int size, int index) {
+void GenerateArray(int array[], const int size, int index) 
+{
     int Low = -40;
     int High = 20;
 
-    if (index >= size) {
+    if (index >= size) 
+    {
         return;
     }
 
-    if (index == 0) { 
+    if (index == 0) 
+    { 
         srand(time(0));
     }
 
@@ -45,8 +48,10 @@ void GenerateArray(int array[], const int size, int index) {
     GenerateArray(array, size, index + 1);
 }
 
-void PrintArray(const int array[], const int size, int index) {
-    if (index >= size) {
+void PrintArray(const int array[], const int size, int index)
+{
+    if (index >= size) 
+    {
         return;
     }
 
@@ -54,30 +59,47 @@ void PrintArray(const int array[], const int size, int index) {
     PrintArray(array, size, index + 1);
 }
 
-int FindMaxIndexRecursive(const int array[], int size, int index, int maxIndex) {
-    if (index >= size) {
+int FindMaxIndexRecursive(const int array[], int size, int index, int maxIndex) 
+{
+    if (index >= size) 
+    {
         return maxIndex;
     }
-    if (array[index] > array[maxIndex]) {
+    if (array[index] > array[maxIndex])
+    {
         maxIndex = index;
     }
     return FindMaxIndexRecursive(array, size, index + 1, maxIndex);
 }
 
-int FindMinIndexRecursive(const int array[], int size, int index, int minIndex) {
-    if (index >= size) {
+int FindMinIndexRecursive(const int array[], int size, int index, int minIndex) 
+{
+    if (index >= size) 
+    {
         return minIndex;
     }
-    if (array[index] < array[minIndex]) {
+    if (array[index] < array[minIndex]) 
+    {
         minIndex = index;
     }
     return FindMinIndexRecursive(array, size, index + 1, minIndex);
 }
 
-double CalculateAverageIndexRecursive(int maxIndex, int minIndex, int sum, int count) {
-    if (count == 0) {
+double CalculateAverageIndexRecursive(int maxIndex, int minIndex, int sum, int count)
+{
+    if (count == 0)
+    {
         return sum / 2.0;
     }
-    sum += (count == 2) ? maxIndex : minIndex;
+
+    if (count == 2)
+    {
+        sum += maxIndex;
+    }
+    else
+    {
+        sum += minIndex;
+    }
     return CalculateAverageIndexRecursive(maxIndex, minIndex, sum, count - 1);
 }
+

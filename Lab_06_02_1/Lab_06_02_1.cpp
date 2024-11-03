@@ -16,9 +16,9 @@ int main() {
 
     GenerateArray(array, size);
 
-    cout << "Array: ";
+    cout << "Array: [";
     PrintArray(array, size);
-    cout << endl;
+    cout << "]" << endl;
 
     int maxIndex = FindMaxIndex(array, size);
     int minIndex = FindMinIndex(array, size);
@@ -29,43 +29,53 @@ int main() {
     return 0;
 }
 
-void GenerateArray(int array[], const int size) {
+void GenerateArray(int array[], const int size) 
+{
     int Low = -40;
     int High = 20;
 
     srand(time(0));
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) 
+    {
         array[i] = Low + rand() % (High - Low + 1);
     }
 }
 
-void PrintArray(const int array[], const int size) {
+void PrintArray(const int array[], const int size) 
+{
     for (int i = 0; i < size; ++i) {
         cout << setw(3) << array[i] << " ";
     }
 }
 
-int FindMaxIndex(const int array[], const int size) {
+int FindMaxIndex(const int array[], const int size) 
+{
     int maxIndex = 0;
-    for (int i = 1; i < size; ++i) {
-        if (array[i] > array[maxIndex]) {
+    for (int i = 1; i < size; ++i) 
+    {
+        if (array[i] > array[maxIndex]) 
+        {
             maxIndex = i;
         }
     }
     return maxIndex;
 }
 
-int FindMinIndex(const int array[], const int size) {
+int FindMinIndex(const int array[], const int size) 
+{
     int minIndex = 0;
-    for (int i = 1; i < size; ++i) {
-        if (array[i] < array[minIndex]) {
+    for (int i = 1; i < size; ++i) 
+    {
+        if (array[i] < array[minIndex]) 
+        {
             minIndex = i;
         }
     }
     return minIndex;
 }
 
-double CalculateAverageIndex(int maxIndex, int minIndex) {
+double CalculateAverageIndex(int maxIndex, int minIndex) 
+{
     return (maxIndex + minIndex) / 2.0;
 }
