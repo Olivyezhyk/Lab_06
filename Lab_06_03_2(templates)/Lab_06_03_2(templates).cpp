@@ -19,17 +19,17 @@ int main() {
 
     GenerateArray(array, size, -40, 20);
 
-    cout << "Array: [";
+    cout << "Array: ";
     PrintArray(array, size);
-    cout << "]" << endl;
+    cout << "" << endl;
 
     int smallestOddRecursive = FindSmallestOddRecursive(array, size, 0, -1);
 
-    if (smallestOddRecursive != -1) 
+    if (smallestOddRecursive != -1)
     {
         cout << "Smallest odd element (recursive) = " << smallestOddRecursive << endl;
     }
-    else 
+    else
     {
         cout << "Smallest odd element (recursive) = not found" << endl;
     }
@@ -38,14 +38,14 @@ int main() {
 }
 
 template <typename T>
-void GenerateArray(T array[], const int size, T Low, T High, int index) 
+void GenerateArray(T array[], const int size, T Low, T High, int index)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return;
     }
 
-    if (index == 0) 
+    if (index == 0)
     {
         srand(time(0));
     }
@@ -55,27 +55,27 @@ void GenerateArray(T array[], const int size, T Low, T High, int index)
 }
 
 template <typename T>
-void PrintArray(const T array[], const int size, int index) 
+void PrintArray(const T array[], const int size, int index)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return;
     }
 
-    cout << setw(3) << array[index] << " ";
+    cout << "(" << "A[" << (index) << "] = " << array[index] << ")" << " ";
     PrintArray(array, size, index + 1);
 }
 
 template <typename T>
-T FindSmallestOddRecursive(const T array[], int size, int index, T smallestOdd) 
+T FindSmallestOddRecursive(const T array[], int size, int index, T smallestOdd)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return smallestOdd;
     }
 
     if (array[index] % 2 != 0) {
-        if (smallestOdd == -1 || array[index] < smallestOdd) 
+        if (smallestOdd == -1 || array[index] < smallestOdd)
         {
             smallestOdd = array[index];
         }

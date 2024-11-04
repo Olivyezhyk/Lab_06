@@ -6,14 +6,16 @@
 
 using namespace std;
 
-void GenerateArray(double array[], int n, int index = 0) 
+void GenerateArray(double array[], int n, int index = 0)
 {
     if (index == n) return;
-    array[index] = (rand() % 6100 - 4000) / 100.0;
+
+    array[index] = (static_cast<double>(rand() % 6000) / 100.0) - 40.0;
+
     GenerateArray(array, n, index + 1);
 }
 
-double findMaxAbsoluteElementRecursive(const double array[], int n, int index = 0, double currentMax = 0) 
+double findMaxAbsoluteElementRecursive(const double array[], int n, int index = 0, double currentMax = 0)
 {
     if (index == n) return currentMax;
     if (abs(array[index]) > abs(currentMax)) currentMax = array[index];
@@ -21,29 +23,29 @@ double findMaxAbsoluteElementRecursive(const double array[], int n, int index = 
 }
 
 double sumBetweenFirstTwoPositivesRecursive(const double array[], int n, int index = 0, int firstPositive = -1, int secondPositive = -1, double summation = 0) {
-    if (index == n) 
+    if (index == n)
     {
-        if (firstPositive != -1 && secondPositive != -1) 
+        if (firstPositive != -1 && secondPositive != -1)
         {
             return summation;
         }
-        else 
+        else
         {
             return 0;
         }
     }
 
     if (array[index] > 0) {
-        if (firstPositive == -1) 
+        if (firstPositive == -1)
         {
             return sumBetweenFirstTwoPositivesRecursive(array, n, index + 1, index, secondPositive, 0);
         }
-        if (secondPositive == -1) 
+        if (secondPositive == -1)
         {
             return sumBetweenFirstTwoPositivesRecursive(array, n, index + 1, firstPositive, index, summation);
         }
     }
-    else if (firstPositive != -1 && secondPositive == -1) 
+    else if (firstPositive != -1 && secondPositive == -1)
     {
         summation += array[index];
     }
@@ -52,24 +54,24 @@ double sumBetweenFirstTwoPositivesRecursive(const double array[], int n, int ind
 }
 
 void moveZerosToEndRecursive(double array[], int n, int index = 0, int nonZeroIndex = 0) {
-    if (index == n) 
+    if (index == n)
     {
-        while (nonZeroIndex < n) 
+        while (nonZeroIndex < n)
         {
             array[nonZeroIndex++] = 0;
         }
         return;
     }
-    if (array[index] != 0) 
+    if (array[index] != 0)
     {
         array[nonZeroIndex++] = array[index];
     }
     moveZerosToEndRecursive(array, n, index + 1, nonZeroIndex);
 }
 
-int main() 
+int main()
 {
-    srand(time(0));
+    srand(static_cast<unsigned int>(time(0)));
 
     int n;
     cout << "Enter the number of elements in the array: ";
@@ -78,12 +80,12 @@ int main()
     double* array = new double[n];
     GenerateArray(array, n);
 
-    cout << "Initial array: [ ";
+    cout << "Initial array: ";
     for (int i = 0; i < n; i++)
     {
-        cout << fixed << setprecision(2) << array[i] << " ";
+        cout << "(" << "A[" << (i) << "] = " << array[i] << ")" << " ";
     }
-    cout << "]" << endl;
+    cout << "" << endl;
 
     double maxAbsolute = findMaxAbsoluteElementRecursive(array, n);
     cout << "Maximum absolute element: " << maxAbsolute << endl;
@@ -93,10 +95,10 @@ int main()
 
     moveZerosToEndRecursive(array, n);
 
-    cout << "Modified array: [ ";
-    for (int i = 0; i < n; i++) 
+    cout << "Modified array: ";
+    for (int i = 0; i < n; i++)
     {
-        cout << fixed << setprecision(2) << array[i] << " ";
+        cout << "(" << "A[" << (i) << "] = " << array[i] << ")" << " ";
     }
     cout << "]" << endl;
 

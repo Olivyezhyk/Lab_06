@@ -16,9 +16,9 @@ int main() {
 
     GenerateArray(array, size);
 
-    cout << "Array: [";
+    cout << "Array: ";
     PrintArray(array, size);
-    cout << "]" << endl;
+    cout << "" << endl;
 
     int maxIndex = FindMaxIndexRecursive(array, size);
     int minIndex = FindMinIndexRecursive(array, size);
@@ -29,18 +29,18 @@ int main() {
     return 0;
 }
 
-void GenerateArray(int array[], const int size, int index) 
+void GenerateArray(int array[], const int size, int index)
 {
     int Low = -40;
     int High = 20;
 
-    if (index >= size) 
+    if (index >= size)
     {
         return;
     }
 
-    if (index == 0) 
-    { 
+    if (index == 0)
+    {
         srand(time(0));
     }
 
@@ -50,18 +50,18 @@ void GenerateArray(int array[], const int size, int index)
 
 void PrintArray(const int array[], const int size, int index)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return;
     }
 
-    cout << setw(3) << array[index] << " ";
+    cout << "(" << "A[" << (index) << "] = " << array[index] << ")" << " ";
     PrintArray(array, size, index + 1);
 }
 
-int FindMaxIndexRecursive(const int array[], int size, int index, int maxIndex) 
+int FindMaxIndexRecursive(const int array[], int size, int index, int maxIndex)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return maxIndex;
     }
@@ -72,13 +72,13 @@ int FindMaxIndexRecursive(const int array[], int size, int index, int maxIndex)
     return FindMaxIndexRecursive(array, size, index + 1, maxIndex);
 }
 
-int FindMinIndexRecursive(const int array[], int size, int index, int minIndex) 
+int FindMinIndexRecursive(const int array[], int size, int index, int minIndex)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return minIndex;
     }
-    if (array[index] < array[minIndex]) 
+    if (array[index] < array[minIndex])
     {
         minIndex = index;
     }
@@ -102,4 +102,3 @@ double CalculateAverageIndexRecursive(int maxIndex, int minIndex, int sum, int c
     }
     return CalculateAverageIndexRecursive(maxIndex, minIndex, sum, count - 1);
 }
-

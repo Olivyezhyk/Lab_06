@@ -10,16 +10,17 @@ int CountFiltered(const int array[], int size, int index = 0);
 int SumFiltered(const int array[], int size, int index = 0);
 void ReplaceFilteredWithZero(int array[], int size, int index = 0);
 
-int main() 
+int main()
 {
     const int size = 26;
     int array[size];
 
     GenerateArray(array, size);
 
-    cout << "Original Array: [";
+    cout << "Original Array: ";
+    cout << "" << endl;
     PrintArray(array, size);
-    cout << "]" << endl;
+    cout << "" << endl;
 
     int count = CountFiltered(array, size);
     int sum = SumFiltered(array, size);
@@ -29,19 +30,20 @@ int main()
     cout << "Count (by criterion) = " << count << endl;
     cout << "Sum (by criterion) = " << sum << endl;
 
-    cout << "Modified Array: [";
+    cout << "Modified Array: ";
+    cout << "" << endl;
     PrintArray(array, size);
-    cout << "]" << endl;
 
     return 0;
 }
 
-void GenerateArray(int array[], const int size, int index) 
+void GenerateArray(int array[], const int size, int index)
 {
     int Low = -40;
     int High = 20;
 
-    if (index >= size) {
+    if (index >= size) 
+    {
         return;
     }
 
@@ -53,25 +55,25 @@ void GenerateArray(int array[], const int size, int index)
     GenerateArray(array, size, index + 1);
 }
 
-void PrintArray(const int array[], const int size, int index) 
+void PrintArray(const int array[], const int size, int index)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return;
     }
 
-    cout << setw(3) << array[index] << " ";
+    cout << "(" << "A[" << (index) << "] = " << array[index] << ")" << " ";
     PrintArray(array, size, index + 1);
 }
 
-int CountFiltered(const int array[], int size, int index) 
+int CountFiltered(const int array[], int size, int index)
 {
-    if (index >= size) 
+    if (index >= size)
     {
         return 0;
     }
     int count = 0;
-    if (array[index] < 0 && index % 2 == 0) 
+    if (array[index] < 0 && index % 2 == 0)
     {
         count = 1;
     }
@@ -94,12 +96,13 @@ int SumFiltered(const int array[], int size, int index)
     return sum + SumFiltered(array, size, index + 1);
 }
 
-void ReplaceFilteredWithZero(int array[], int size, int index) 
+void ReplaceFilteredWithZero(int array[], int size, int index)
 {
-    if (index >= size) {
+    if (index >= size) 
+    {
         return;
     }
-    if (array[index] < 0 && index % 2 == 0) 
+    if (array[index] < 0 && index % 2 == 0)
     {
         array[index] = 0;
     }

@@ -16,9 +16,8 @@ int main() {
 
     GenerateArray(array, size);
 
-    cout << "Array: [";
+    cout << "Array: ";
     PrintArray(array, size);
-    cout << "]" << endl;
 
     int maxIndex = FindMaxIndex(array, size);
     int minIndex = FindMinIndex(array, size);
@@ -29,32 +28,34 @@ int main() {
     return 0;
 }
 
-void GenerateArray(int array[], const int size) 
+void GenerateArray(int array[], const int size)
 {
     int Low = -40;
     int High = 20;
 
     srand(time(0));
 
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i < size; i++)
     {
         array[i] = Low + rand() % (High - Low + 1);
     }
 }
 
-void PrintArray(const int array[], const int size) 
+void PrintArray(const int array[], const int size)
 {
-    for (int i = 0; i < size; ++i) {
-        cout << setw(3) << array[i] << " ";
+    for (int i = 0; i < size; ++i)
+    {
+        cout << "(" << "A[" << (i) << "] = " << array[i] << ")" << " ";
     }
+    cout << "" << endl;
 }
 
-int FindMaxIndex(const int array[], const int size) 
+int FindMaxIndex(const int array[], const int size)
 {
     int maxIndex = 0;
-    for (int i = 1; i < size; ++i) 
+    for (int i = 1; i < size; ++i)
     {
-        if (array[i] > array[maxIndex]) 
+        if (array[i] > array[maxIndex])
         {
             maxIndex = i;
         }
@@ -62,12 +63,12 @@ int FindMaxIndex(const int array[], const int size)
     return maxIndex;
 }
 
-int FindMinIndex(const int array[], const int size) 
+int FindMinIndex(const int array[], const int size)
 {
     int minIndex = 0;
-    for (int i = 1; i < size; ++i) 
+    for (int i = 1; i < size; ++i)
     {
-        if (array[i] < array[minIndex]) 
+        if (array[i] < array[minIndex])
         {
             minIndex = i;
         }
@@ -75,7 +76,7 @@ int FindMinIndex(const int array[], const int size)
     return minIndex;
 }
 
-double CalculateAverageIndex(int maxIndex, int minIndex) 
+double CalculateAverageIndex(int maxIndex, int minIndex)
 {
-    return (maxIndex + minIndex) / 2.0;
+    return (static_cast<double>(maxIndex) + static_cast<double>(minIndex)) / 2.0;
 }
