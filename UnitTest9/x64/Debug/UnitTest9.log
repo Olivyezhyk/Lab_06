@@ -1,5 +1,0 @@
-﻿  UnitTest9.cpp
-C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_04_1\Lab_06_04_1.cpp(82,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  (compiling source file '/UnitTest9.cpp')
-  
-  UnitTest9.vcxproj -> C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest9.dll

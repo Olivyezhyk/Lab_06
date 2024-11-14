@@ -1,5 +1,0 @@
-﻿  UnitTest6.cpp
-C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_2\Lab_06_03_2.cpp(46,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  (compiling source file '/UnitTest6.cpp')
-  
-  UnitTest6.vcxproj -> C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest6.dll
