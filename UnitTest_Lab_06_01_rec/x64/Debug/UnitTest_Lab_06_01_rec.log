@@ -1,2 +1,4 @@
-﻿  UnitTest_Lab_06_01_rec.cpp
+﻿  pch.cpp
+  UnitTest_Lab_06_01_rec.cpp
+     Creating library C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest_Lab_06_01_rec.lib and object C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest_Lab_06_01_rec.exp
   UnitTest_Lab_06_01_rec.vcxproj -> C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest_Lab_06_01_rec.dll

@@ -55,7 +55,7 @@ void GenerateArray(double* a, int n, int i)
 void PrintArray(double* a, int n, int i)
 {
     if (i < n) {
-        std::cout << std::fixed << std::setprecision(1) << "(" << "a[" << i << "] = " << a[i] << ") ";
+        std::cout << std::setw(8) << a[i];
         PrintArray(a, n, i + 1);
     }
     else {

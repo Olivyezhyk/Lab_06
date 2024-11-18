@@ -1,5 +1,103 @@
-﻿  UnitTest_Lab_06_03_rec.cpp
-C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(33,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  pch.cpp
+  UnitTest_Lab_06_03_rec.cpp
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(22,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
   
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u041D' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0454' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0445' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(72,26): warning C4566: character represented by universal-character-name '\u0456' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u041D' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0454' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0445' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+C:\Users\olegs\Desktop\github\Lab_06\Lab_06\Lab_06_03_rec\Lab_06_03_rec.cpp(117,26): warning C4566: character represented by universal-character-name '\u0456' cannot be represented in the current code page (1252)
+  (compiling source file '/UnitTest_Lab_06_03_rec.cpp')
+  
+     Creating library C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest_Lab_06_03_rec.lib and object C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest_Lab_06_03_rec.exp
   UnitTest_Lab_06_03_rec.vcxproj -> C:\Users\olegs\Desktop\github\Lab_06\Lab_06\x64\Debug\UnitTest_Lab_06_03_rec.dll

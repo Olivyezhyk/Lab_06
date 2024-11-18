@@ -55,7 +55,7 @@ void PrintArray(double* a, const int n)
 {
     std::cout << std::fixed << std::setprecision(1);
     for (int i = 0; i < n; ++i) {
-        std::cout << "(" << "a[" << i << "] = " << a[i] << ") ";
+        std::cout << std::setw(8) << a[i];
     }
     std::cout << std::endl;
 }
